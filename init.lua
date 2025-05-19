@@ -16,7 +16,7 @@ local lazy_config = require "configs.lazy"
 -- load plugins
 require("lazy").setup({
   {
-    "NvChad/NvChad",
+    "AstralJohn/NvChad",
     lazy = false,
     branch = "v2.5",
     import = "nvchad.plugins",
@@ -33,9 +33,8 @@ require "options"
 require "nvchad.autocmds"
 
 -- load Comment plugin
-require('Comment').setup()
+require("Comment").setup()
 
 vim.schedule(function()
   require "mappings"
 end)
-
