@@ -18,7 +18,7 @@ require("lazy").setup({
   {
     "AstralJohn/NvChad",
     lazy = false,
-    branch = "v2.5",
+    branch = "v2.5-personal",
     import = "nvchad.plugins",
   },
 
