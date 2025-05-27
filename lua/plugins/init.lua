@@ -1,4 +1,5 @@
 return {
+  { import = "nvchad.blink.lazyspec" },
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- formats on save
@@ -32,5 +33,11 @@ return {
         highlight_git = "all",
       },
     },
+  },
+  {
+    "NvChad/nvterm",
+    config = function()
+      require("nvterm").setup()
+    end,
   },
 }
