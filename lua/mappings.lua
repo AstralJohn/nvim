@@ -2,6 +2,8 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
+map("i", "<leader>q", "<ESC>", { silent = true, noremap = true })
+
 map("n", "<leader>n", ":noh<CR>", { silent = true, noremap = true, desc = "Map <leader>n to :noh (No Highlight)" })
 
 map("t", "<leader>t", function()
