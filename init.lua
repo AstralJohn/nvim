@@ -38,3 +38,7 @@ require("Comment").setup()
 vim.schedule(function()
   require "mappings"
 end)
+
+require("nvim-treesitter.configs").setup {
+  ensure_installed = { "markdown", "typescript" },
+}
